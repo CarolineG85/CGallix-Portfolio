@@ -1,0 +1,686 @@
+.stack-page {
+  animation: fadeIn 1s ease-in forwards;
+
+  .stack-title {
+    display: flex;
+    flex-direction: column;
+    margin: 4em 8em 1em;
+
+    h1,
+    h2 {
+      color: white;
+    }
+
+    h1 {
+      font-family: var(--title-font);
+      font-size: 8em;
+      color: white;
+    }
+    h2 {
+      font-family: var(--text-font);
+      font-size: 1.5em;
+    }
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6em;
+    flex-wrap: wrap;
+
+    .front {
+      h1 {
+        font-family: var(--title-font);
+        font-size: 2em;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    .front-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+
+      .front-image-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        width: 10vw;
+        height: 40vh;
+        align-items: center;
+        align-content: flex-start;
+
+        .front-image {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    .back-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+
+      .back {
+        h1 {
+          font-family: var(--title-font);
+          font-size: 2em;
+          color: white;
+          text-align: center;
+        }
+      }
+      .back-image-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        width: 10vw;
+        height: 40vh;
+        align-items: center;
+        align-content: flex-start;
+
+        .back-image {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    .others-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      .others {
+        h1 {
+          font-family: var(--title-font);
+          font-size: 2em;
+          color: white;
+          text-align: center;
+        }
+      }
+      .others-image-container {
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        width: 10vw;
+        height: 40vh;
+        align-items: center;
+        align-content: flex-start;
+
+        .others-image {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 60%;
+          }
+          .trello {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .stack-page {
+    .stack-title {
+      margin: 1em 2em;
+
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .skills-container {
+      flex-direction: column;
+      margin-top: 3em;
+      width: 100%;
+
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 26vw;
+
+          height: 20vh;
+          .front-image {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 30vw;
+          margin-bottom: 3em;
+          height: 20vh;
+          .back-image {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 10px;
+          width: 28vw;
+          margin-bottom: 5em;
+          height: 20vh;
+          .others-image {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 360px) {
+  .stack-page {
+    .stack-title {
+      margin: 1em 2em;
+
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .skills-container {
+      margin-top: 3em;
+
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 20vw;
+
+          .front-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 20vw;
+
+          .back-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 10px;
+          width: 20vw;
+
+          .others-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .stack-page {
+    .stack-title {
+      margin: 1em 2em;
+
+      h1 {
+        font-size: 3em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .skills-container {
+      margin-top: 3em;
+
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 12vw;
+
+          .front-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 12vw;
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          gap: 10px;
+          width: 12vw;
+        }
+      }
+    }
+  }
+}
+
+//Tablet breakpoints
+@media screen and (min-width: 600px) and (max-height: 1024px) {
+  .stack-page {
+    .stack-title {
+      h1 {
+        font-size: 4em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .skills-container {
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 15vw;
+          height: 30vh;
+
+          .front-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 15vw;
+          height: 30vh;
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          gap: 10px;
+          width: 15vw;
+          height: 30vh;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 991px) and (max-height: 1280px) {
+  .stack-page {
+    .stack-title {
+      margin: 3em 5em;
+
+      h1 {
+        font-size: 6em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .skills-container {
+      margin-top: 5em;
+
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 15vw;
+          height: 30vh;
+
+          .front-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 15vw;
+          height: 30vh;
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          gap: 10px;
+          width: 15vw;
+          height: 30vh;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .stack-page {
+    .skills-container {
+      margin-top: 5em;
+
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 15vw;
+          height: 30vh;
+
+          .front-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 15vw;
+          height: 30vh;
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          gap: 10px;
+          width: 15vw;
+          height: 30vh;
+        }
+      }
+    }
+  }
+}
+
+// Laptop breakpoints
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .stack-page {
+    .stack-title {
+      margin: 1em 2em;
+
+      h1 {
+        font-size: 4em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .skills-container {
+      margin-top: 3em;
+
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 15vw;
+
+          .front-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 15vw;
+
+          .back-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 10px;
+          width: 15vw;
+
+          .others-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  .stack-page {
+    .stack-title {
+      margin: 1em 2em;
+
+      h1 {
+        font-size: 4em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .skills-container {
+      margin-top: 3em;
+
+      .front {
+        h1 {
+          font-size: 2em;
+        }
+      }
+      .front-container {
+        align-items: center;
+
+        .front-image-container {
+          gap: 10px;
+          width: 12vw;
+
+          .front-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .back-container {
+        align-items: center;
+
+        .back-image-container {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 10px;
+          width: 12vw;
+
+          .back-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .others-container {
+        align-items: center;
+
+        .others-image-container {
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 10px;
+          width: 12vw;
+
+          .others-image {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

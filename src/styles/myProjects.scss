@@ -1,0 +1,594 @@
+.projects-page {
+  animation: fadeIn 1s ease-in forwards;
+
+  .projects-title {
+    display: flex;
+    flex-direction: column;
+    margin: 4em 8em 1em;
+    cursor: default;
+    h1,
+    h2 {
+      color: white;
+    }
+
+    h1 {
+      font-family: var(--title-font);
+      font-size: 8em;
+      color: white;
+    }
+    h2 {
+      font-family: var(--text-font);
+      font-size: 1.5em;
+    }
+  }
+
+  .projects-presentation-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 6em;
+
+    .wild-container {
+      cursor: default;
+      border-radius: 10px;
+      background-image: url("/wild-eats.png");
+      width: 22vw;
+      height: 28vh;
+      background-size: 22vw 28vh;
+      background-position: center;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .wild-eats {
+        z-index: 1;
+        width: 22vw;
+        height: 28vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: rgb(141, 181, 150, 0.95);
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+
+        .wild-title {
+          font-size: 24px;
+          color: white;
+          font-family: var(--text-font);
+          font-weight: 700;
+        }
+        .wild-paragraph {
+          font-size: 14px;
+          color: white;
+          font-family: var(--text-font);
+          line-height: 1.4;
+
+          .wild-span {
+            font-size: 10px;
+          }
+        }
+
+        .button-wild {
+          background-color: #8db596;
+          border-radius: 5px;
+          border-style: none;
+          border: 1px solid white;
+          padding: 5px;
+          width: 20%;
+          position: absolute;
+          bottom: 5px;
+
+          a {
+            color: white;
+            font-family: var(--text-font);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .drunkard-container {
+      border-radius: 10px;
+      background-image: url("/drunkard.png");
+      background-size: 22vw 28vh;
+      background-position: center;
+      width: 22vw;
+      height: 28vh;
+      transition: transform 0.3s ease-in-out;
+      cursor: default;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+      .drunkard {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgba(16, 32, 50, 0.95);
+        width: 22vw;
+        height: 28vh;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+
+        .drunkard-title {
+          font-size: 24px;
+          color: white;
+          font-family: var(--text-font);
+          font-weight: 700;
+        }
+        .drunkard-paragraph {
+          font-size: 14px;
+          color: white;
+          font-family: var(--text-font);
+          line-height: 1.4;
+
+          .drunkard-span {
+            font-size: 10px;
+          }
+        }
+
+        .button-drunk {
+          background-color: rgba(16, 32, 50);
+          border-style: none;
+          border: 1px solid white;
+          border-radius: 5px;
+          padding: 5px;
+          width: 20%;
+          position: absolute;
+          bottom: 5px;
+
+          a {
+            color: white;
+            font-family: var(--text-font);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .christmas-container {
+      border-radius: 10px;
+      background-image: url("/noelEnUnClic.png");
+      background-size: 22vw 28vh;
+      background-position: center;
+      width: 22vw;
+      height: 28vh;
+      transition: transform 0.3s ease-in-out;
+      cursor: default;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+      .christmas {
+        z-index: 1;
+        width: 22vw;
+        height: 28vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: rgb(156, 1, 0, 0.95);
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+
+        .christmas-title {
+          font-size: 24px;
+          color: white;
+          font-family: var(--text-font);
+          font-weight: 700;
+        }
+        .christmas-paragraph {
+          font-size: 14px;
+          color: white;
+          font-family: var(--text-font);
+          line-height: 1.4;
+
+          .christmas-span {
+            font-size: 10px;
+          }
+        }
+
+        .button-christmas {
+          background-color: #9c0100;
+          border-radius: 5px;
+          border-style: none;
+          border: 1px solid white;
+          padding: 5px;
+          width: 20%;
+          position: absolute;
+          bottom: 5px;
+
+          a {
+            color: white;
+            font-family: var(--text-font);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.projects-presentation-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 1em 2em;
+
+  .wild-eats {
+    border: #8db596 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #8db596;
+    .wild-title {
+      font-size: 24px;
+      color: white;
+      font-family: var(--text-font);
+      font-weight: 700;
+    }
+    .wild-paragraph {
+      font-size: 14px;
+      color: white;
+      font-family: var(--text-font);
+      line-height: 1.4;
+
+      .wild-span {
+        font-size: 10px;
+      }
+    }
+
+    .button-wild {
+      background-color: #8db596;
+      border-radius: 5px;
+      border-style: none;
+      border: 1px solid white;
+      padding: 5px;
+
+      a {
+        color: white;
+        font-family: var(--text-font);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .drunkard {
+    border: rgba(16, 32, 50, 0.75) 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(16, 32, 50, 0.75);
+
+    .drunkard-title {
+      font-size: 24px;
+      color: white;
+      font-family: var(--text-font);
+      font-weight: 700;
+    }
+    .drunkard-paragraph {
+      font-size: 14px;
+      color: white;
+      font-family: var(--text-font);
+      line-height: 1.4;
+
+      .drunkard-span {
+        font-size: 10px;
+      }
+    }
+
+    .button-drunk {
+      background-color: rgba(16, 32, 50, 0.75);
+      border-style: none;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 5px;
+
+      a {
+        color: white;
+        font-family: var(--text-font);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .christmas {
+    border: #9c0100 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #9c0100;
+    .christmas-title {
+      font-size: 24px;
+      color: white;
+      font-family: var(--text-font);
+      font-weight: 700;
+    }
+    .christmas-paragraph {
+      font-size: 14px;
+      color: white;
+      font-family: var(--text-font);
+      line-height: 1.4;
+
+      .christmas-span {
+        font-size: 10px;
+      }
+    }
+
+    .button-christmas {
+      background-color: #9c0100;
+      border-radius: 5px;
+      border-style: none;
+      border: 1px solid white;
+      padding: 5px;
+
+      a {
+        color: white;
+        font-family: var(--text-font);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+//Mobile breakpoints
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .projects-page .projects-title {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1.5em;
+
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+  }
+
+  .projects-presentation-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .projects-page {
+    .projects-title {
+      margin: 1em 2em;
+
+      h1 {
+        font-size: 3.5em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .projects-presentation-desktop {
+    display: none;
+  }
+}
+
+//Tablet breakpoints
+@media screen and (max-width: 1024px) {
+  .projects-page {
+    .projects-title {
+      margin: 2em 2em;
+
+      h1 {
+        font-size: 4em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .projects-presentation-desktop {
+      display: none;
+    }
+  }
+}
+
+// Laptop breakpoints
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .projects-page {
+    .projects-title {
+      margin: 2em 2em;
+
+      h1 {
+        font-size: 5em;
+      }
+    }
+    .projects-presentation-desktop {
+      .wild-container {
+        width: 25vw;
+        height: 28vh;
+        background-size: 25vw 28vh;
+        background-position: center;
+
+        .wild-eats {
+          padding: 10px;
+          width: 25vw;
+          .wild-title {
+            font-size: 1.3em;
+          }
+          .wild-paragraph {
+            font-size: 0.7em;
+          }
+
+          .button-wild {
+            position: absolute;
+            bottom: 5px;
+            padding: 2px;
+            width: 40%;
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .drunkard-container {
+        width: 25vw;
+        height: 28vh;
+        background-size: 25vw 28vh;
+        .drunkard {
+          width: 25vw;
+          padding: 10px;
+
+          .drunkard-title {
+            font-size: 1.3em;
+          }
+          .drunkard-paragraph {
+            font-size: 0.7em;
+          }
+
+          .button-drunk {
+            position: absolute;
+            bottom: 5px;
+            padding: 2px;
+            width: 40%;
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .christmas-container {
+        width: 25vw;
+        height: 28vh;
+        background-size: 25vw 28vh;
+        .christmas {
+          width: 25vw;
+          padding: 10px;
+
+          .christmas-title {
+            font-size: 1.3em;
+          }
+          .christmas-paragraph {
+            font-size: 0.7em;
+          }
+
+          .button-christmas {
+            position: absolute;
+            bottom: 5px;
+            padding: 2px;
+            width: 40%;
+
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .projects-presentation-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+  .projects-page {
+    .projects-title {
+      margin: 2em 2em;
+
+      h1 {
+        font-size: 7em;
+      }
+    }
+    .projects-presentation-desktop {
+      .wild-container {
+        .wild-eats {
+          padding: 10px;
+          .wild-title {
+            font-size: 1.3em;
+          }
+          .wild-paragraph {
+            font-size: 0.8em;
+          }
+
+          .button-wild {
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .drunkard-container {
+        .drunkard {
+          padding: 10px;
+
+          .drunkard-title {
+            font-size: 1.3em;
+          }
+          .drunkard-paragraph {
+            font-size: 0.8em;
+          }
+
+          .button-drunk {
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .christmas-container {
+        .christmas {
+          padding: 10px;
+
+          .christmas-title {
+            font-size: 1.3em;
+          }
+          .christmas-paragraph {
+            font-size: 0.7em;
+          }
+
+          .button-christmas {
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .projects-presentation-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects-presentation-mobile {
+    display: none;
+  }
+}
