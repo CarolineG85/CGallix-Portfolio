@@ -4,7 +4,7 @@ function AboutMe() {
       <div className="about-title">
         <h1>About me</h1>
         <div className="cv-button">
-        <a href="/CvCarolineGallix.pdf.pdf">
+        <a href="/CvCarolineGallix.pdf">
           <button>
             Get my CV
             <div className="arrow-wrapper">
