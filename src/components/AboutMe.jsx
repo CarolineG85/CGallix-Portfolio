@@ -2,22 +2,25 @@ function AboutMe() {
   return (
     <div className="about-page">
       <div className="about-title">
-        <h1>About me</h1>
+        <div className="title-thumbnail">
+          <h1 className="habout">About me</h1>
+          <div className="thumbnail">
+            <img src="/thumbnail-crop.png" alt="my picture" />
+          </div>
+        </div>
+
         <div className="cv-button">
-        <a href="/CvCarolineGallix.pdf">
-          <button>
-            Get my CV
-            <div className="arrow-wrapper">
-              <div className="arrow"></div>
-            </div>
-          </button>
+          <a href="/CvCarolineGallix.pdf">
+            <button>
+              Get my CV
+              <div className="arrow-wrapper">
+                <div className="arrow"></div>
+              </div>
+            </button>
           </a>
         </div>
       </div>
       <div className="presentation">
-        <div className="thumbnail">
-          <img src="/thumbnail-crop.png" alt="my picture" />
-        </div>
         <div className="experience">
           <p>
             Tech, a word that many Millennials are familiar with because we grew
@@ -39,7 +42,7 @@ function AboutMe() {
             coding intrigued me, it was not my top priority at the time. <br />
             <br />
             That is why, in 2023, I decided to embark on a new career as a
-            full-stack developer. I will continue to offer my skills and advice
+            full stack developer. I will continue to offer my skills and advice
             to those looking to develop their digital projects, innovate, and
             achieve their goals at work or in their lives, thanks to the web...
           </p>
