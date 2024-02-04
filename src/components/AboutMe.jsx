@@ -41,9 +41,9 @@ function AboutMe() {
             developers for my website and CRM when I started my business. While
             coding intrigued me, it was not my top priority at the time. <br />
             <br />
-            That is why, in 2023, I decided to embark on a new career as a
-            full stack developer. I will continue to offer my skills and advice
-            to those looking to develop their digital projects, innovate, and
+            That is why, in 2023, I decided to embark on a new career as a full
+            stack developer. I will continue to offer my skills and advice to
+            those looking to develop their digital projects, innovate, and
             achieve their goals at work or in their lives, thanks to the web...
           </p>
         </div>

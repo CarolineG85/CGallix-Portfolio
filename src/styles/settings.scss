@@ -1,125 +1,122 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-
-min-width: 100vw;
-min-height: 100vh;
-overflow-x: hidden;
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 :root {
-
---background-color: #373840;
---primary-color: rgb(98, 117, 240, 0.7);
---title-font:'Anton', sans-serif;
---text-font: 'Nunito Sans', sans-serif;
+  --background-color: #373840;
+  --primary-color: rgb(98, 117, 240, 0.7);
+  --title-font: "Anton", sans-serif;
+  --text-font: "Nunito Sans", sans-serif;
 }
 
 body {
-
-background-color: var(--background-color);
-
+  background-color: var(--background-color);
 }
 
 .header {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-a{
-  text-decoration: none;
-  
-  .header-button-container{
-  margin-left: 1.25em;
-  margin-top: 0.9em;
-  .button {
-    position: relative;
-    width: 7.5em;
-    height: 2.5em;
-    background-color: var(--background-color);
+  a {
+    text-decoration: none;
+
+    .header-button-container {
+      margin-left: 1.25em;
+      margin-top: 0.9em;
+      .button {
+        position: relative;
+        width: 7.5em;
+        height: 2.5em;
+        background-color: var(--background-color);
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: var(--text-font);
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+        padding: 12px;
+        gap: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .button::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        left: -3.5px;
+        top: 0;
+        margin: auto;
+        width: 8em;
+        height: 3em;
+        border-radius: 10px;
+        background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+        z-index: -10;
+        pointer-events: none;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .button::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          -45deg,
+          #470a48 0%,
+          rgb(98, 117, 240, 0.7) 100%
+        );
+        transform: translate3d(0, 0, 0) scale(0.95);
+        filter: blur(20px);
+      }
+
+      .button:hover::after {
+        filter: blur(30px);
+      }
+
+      .button:hover::before {
+        transform: rotate(-180deg);
+      }
+
+      .button:active::before {
+        scale: 0.7;
+      }
+    }
+  }
+
+  .header-link {
+    margin: 1.5em;
     display: flex;
     align-items: center;
-    color: white;
-    font-family: var(--text-font);
-    flex-direction: column;
-    justify-content: center;
-    border: none;
-    padding: 12px;
-    gap: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .button::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    left: -3.5px;
-    top: 0;
-    margin: auto;
-    width: 8em;
-    height: 3em;
-    border-radius: 10px;
-    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
-    z-index: -10;
-    pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .button::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-45deg, #470a48 0%,  rgb(98, 117, 240, 0.7) 100% );
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-  }
-  
-  .button:hover::after {
-    filter: blur(30px);
-  }
-  
-  .button:hover::before {
-    transform: rotate(-180deg);
-  }
-  
-  .button:active::before {
-    scale: 0.7;
-  }
-}}
-  
-  
-.header-link {
-  margin: 1.5em;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  
-  
-  .contact {
-    width: 2.5em;
-    height: auto;
-    transform: translate(-10%, 10%);
-  }
-  .github {
-    width: 2.31em;
-    height: auto;
-  }
+    gap: 15px;
 
-  .linkedin {
-    width: 2.43em;
-    height: auto;
+    .contact {
+      width: 2.5em;
+      height: auto;
+      transform: translate(-10%, 10%);
+    }
+    .github {
+      width: 2.31em;
+      height: auto;
+    }
+
+    .linkedin {
+      width: 2.43em;
+      height: auto;
+    }
   }
 }
-
-}
-

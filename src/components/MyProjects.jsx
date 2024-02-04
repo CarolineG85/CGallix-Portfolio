@@ -27,9 +27,9 @@ function HoveringWild() {
     <div className="wild-eats">
       <h1 className="wild-title">Wild eats</h1>
       <p className="wild-paragraph">
-        In a group of 5, we had to create a website in which users can find the
-        best restaurants around our development school. They are categorized by
-        type of food, meal prices, location and popularity.
+        In a group of 5, we had to create our first website in which users can
+        find the best restaurants around our development school. They are
+        categorized by type of food, meal prices, location and popularity.
         <br /> <span className="wild-span">Html CSS Javascript</span>
       </p>
 
@@ -127,9 +127,10 @@ function MyProjects() {
         <div className="wild-eats">
           <h1 className="wild-title">Wild eats</h1>
           <p className="wild-paragraph">
-            In a group of 5, we had to create a website in which users can find
-            the best restaurants around our development school. They are
-            categorized by type of food, meal prices, location and popularity.
+            In a group of 5, we had to create our first website, in which users
+            can find the best restaurants around our development school. They
+            are categorized by type of food, meal prices, location and
+            popularity.
             <br /> <span className="wild-span">Html CSS Javascript</span>
           </p>
           <br />

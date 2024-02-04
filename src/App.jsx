@@ -20,7 +20,12 @@ function App() {
         </div>
         <div className="header-link">
           <Link onClick={handleMail}>
-            <img className="contact" src="/email.png" alt="contact" title="caroline.gallix85@gmail.com" />
+            <img
+              className="contact"
+              src="/email.png"
+              alt="contact"
+              title="caroline.gallix85@gmail.com"
+            />
           </Link>
           <Link to="https://github.com/CarolineG85">
             <img className="github" src="/github2.png" alt="github" />
