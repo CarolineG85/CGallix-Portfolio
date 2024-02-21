@@ -33,10 +33,10 @@ function AboutMe() {
             <br />
             I was not initially destined for a career in web development. I
             studied Human Sciences and became my own boss as a sophrologist,
-            working in a place where other therapists also practiced. The onset
-            of the COVID-19 pandemic forced me to close my business. Although I
-            found another job, I always felt a lingering desire to do something
-            different—something fun, useful for both others and myself. Helping
+            working in a place where other therapists also practiced. The 
+            COVID-19 forced me to close my business. Although I
+            found another job, I always felt the desire to do something
+            different, something fun, useful for both others and myself. Helping
             people is my passion, and I vividly remember collaborating with
             developers for my website and CRM when I started my business. While
             coding intrigued me, it was not my top priority at the time. <br />
