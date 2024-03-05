@@ -5,7 +5,7 @@ function AboutMe() {
         <div className="title-thumbnail">
           <h1 className="habout">About me</h1>
           <div className="thumbnail">
-            <img src="/thumbnail-crop.png" alt="my picture" />
+            <img src="/thumbnail-crop.png" alt="my animated thumbnail" />
           </div>
         </div>
 
